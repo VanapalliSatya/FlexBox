@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Poppins:wght@500&family=Roboto&family=Sono:wght@500&family=Trirong:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Fira Sans', sans-serif;
+        }
+        .plans{
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            align-items: center;
+            height: 100vh;
+            flex-direction: row;
+        }
+        .basic{
+            min-width: 300px;
+            background-color: #EEE3CB;
+            border-radius: 5px;
+            text-align: center;
+            padding: 20px;
+            flex: 1 1 1;
+            
+        }
+        .plan1-name{
+            font-weight: bold;
+            padding-bottom: 9px ;
+        }
+        .plan1-amount{
+            font-size: 2rem;
+            font-weight: bold;
+            
+        }
+        .plan1-features{
+            font-size: 1rem;
+            padding: 0px;
+        }
+        .standard{
+            min-width: 300px;
+            background-color: #EEE3CB;
+            border-radius: 5px;
+            text-align: center;
+            padding: 20px;
+            flex: 1 1 1;
+        }
+        .plan2-name{
+            font-weight: bold;
+            padding-bottom: 9px ;
+        }
+        .plan2-amount{
+            font-size: 2rem;
+            font-weight: bold;
+            
+        }
+        .plan2-features{
+            font-size: 1rem;
+            padding: 0px;
+        }
+        .premium{
+            min-width: 300px;
+            background-color: #EEE3CB;
+            border-radius: 5px;
+            text-align: center;
+            padding: 20px;
+            flex: 1 1 1;
+        }
+        .plan3-name{
+            font-weight: bold;
+            padding-bottom: 9px ;
+        }
+        .plan3-amount{
+            font-size: 2rem;
+            font-weight: bold;
+            
+        }
+        .plan3-features{
+            font-size: 1rem;
+            padding: 0px;
+        }
+        li{
+            list-style: none;
+        }
+        .button{
+            width: 80px;
+            height: 35px;
+            border-radius: 5px;
+            background-color: orangered;
+        }
+        @media (max-width:1250px){
+            .plans{
+                flex-direction: column;
+                gap: 5rem;
+                height: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="plans">
+        <!-- basic plan  -->
+        <div class="basic">
+            <div class="plan1-name">Basic</div>
+            <div class="plan1-amount">$ 11.99/month</div>
+            <ul class="plan1-features">
+                <li>✅ 10 GB Storage</li>
+                <li>✅ 1 User</li>
+                <li>❗Support</li>
+            </ul>
+            <input type="button" value="Sign Up" class="button"></input>
+        </div>
+
+        <!-- standard plan -->
+        <div class="standard">
+            <div class="plan2-name">Standard</div>
+            <div class="plan2-amount">$ 19.99/month</div>
+            <ul class="plan2-features">
+                <li>✅ 50 GB Storage</li>
+                <li>✅ 5 User</li>
+                <li>✅ Phone & Email Support</li>
+            </ul>
+            <input type="button" value="Sign Up" class="button"></input>
+        </div>
+
+        <!-- Premium plan -->
+        <div class="premium">
+            <div class="plan3-name">Premium</div>
+            <div class="plan3-amount">$ 49.99/month</div>
+            <ul class="plan3-features">
+                <li>✅ 100 GB Storage</li>
+                <li>✅ 10 User</li>
+                <li>✅ 24/7 Support</li>
+            </ul>
+            <input type="button" value="Sign Up" class="button"></input>
+        </div>
+    </div>
+</body>
+</html>
